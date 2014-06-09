@@ -9,6 +9,7 @@ set :domain do
   item.attributes["domain"].values[0].to_s
 end
 
+
 set :artifact_bucket do
   item = sdb.domains["test"].items['parameters']
   item.attributes['artifact_bucket'].values[0].to_s
